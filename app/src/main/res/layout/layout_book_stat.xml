@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/book_cover"
+        android:layout_width="140dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        style="@style/TextContent.TitleSmall.Bold"
+        android:id="@+id/book_title_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/book_title"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/book_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/book_cover"
+        app:layout_constraintTop_toTopOf="@+id/book_cover" />
+
+    <TextView
+        style="@style/TextContent.TitleMedium.Bold"
+        android:id="@+id/book_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/book_title"
+        app:layout_constraintEnd_toEndOf="@+id/book_title_label"
+        app:layout_constraintStart_toEndOf="@+id/book_cover"
+        app:layout_constraintTop_toBottomOf="@+id/book_title_label" />
+
+    <TextView
+        style="@style/TextContent.TitleSmall.Bold"
+        android:id="@+id/book_author_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/author"
+        app:layout_constraintEnd_toEndOf="@+id/book_title_label"
+        app:layout_constraintStart_toEndOf="@+id/book_cover"
+        app:layout_constraintTop_toBottomOf="@+id/book_title" />
+
+    <TextView
+        style="@style/TextContent.TitleMedium.Bold"
+        android:id="@+id/book_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/book_title"
+        app:layout_constraintEnd_toEndOf="@+id/book_title_label"
+        app:layout_constraintStart_toEndOf="@+id/book_cover"
+        app:layout_constraintTop_toBottomOf="@+id/book_author_label" />
+
+    <TextView
+        style="@style/TextContent.TitleSmall.Bold"
+        android:id="@+id/book_year_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/year"
+        app:layout_constraintEnd_toEndOf="@+id/book_title_label"
+        app:layout_constraintStart_toEndOf="@+id/book_cover"
+        app:layout_constraintTop_toBottomOf="@+id/book_author" />
+
+    <TextView
+        style="@style/TextContent.TitleMedium.Bold"
+        android:id="@+id/book_year"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/book_title"
+        app:layout_constraintEnd_toEndOf="@+id/book_title_label"
+        app:layout_constraintStart_toEndOf="@+id/book_cover"
+        app:layout_constraintTop_toBottomOf="@+id/book_year_label" />
+    <Button
+        style="@style/TextContent.TitleMedium.Bold"
+        android:id="@+id/action_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/book_cover" />
+</androidx.constraintlayout.widget.ConstraintLayout>
